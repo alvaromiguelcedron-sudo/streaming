@@ -21,7 +21,7 @@
   >
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/style.css">
+  
 </head>
 
 <body>
@@ -114,46 +114,79 @@
 
   <!-- ================= HERO ================= -->
 
-  <section class="hero">
+  <div id="carouselEstrenos" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
 
-    <div class="hero-overlay">
-
-      <div class="container hero-content">
-
-        <h1 class="display-3 fw-bold mb-3">
-          Stranger Things
-        </h1>
-
-        <p class="lead mb-4">
-          Un grupo de amigos descubre secretos sobrenaturales
-          en un pequeño pueblo lleno de misterios.
-        </p>
-
-        <div class="d-flex gap-3">
-
-          <a
-            href="./pages/detalle-serie.html"
-            class="btn btn-danger btn-lg"
-          >
-            <i class="bi bi-play-fill"></i>
-            Ver ahora
-          </a>
-
-          <a
-            href="./pages/detalle-serie.html"
-            class="btn btn-outline-light btn-lg"
-          >
-            Más información
-          </a>
-
+    <div class="carousel-item active" data-bs-interval="5000">
+      <div class="hero" style="background-image: url('../asset/strangerthings.webp');">
+        <div class="hero-overlay">
+          <div class="container hero-content text-white">
+            <h1 class="display-3 fw-bold mb-3">Stranger Things</h1>
+            <p class="lead mb-4">Secretos sobrenaturales y dimensiones paralelas en el pueblo de Hawkins.</p>
+            <div class="d-flex gap-3">
+              <a href="https://www.netflix.com/title/80057281" target="_blank" class="btn btn-danger btn-lg">
+                <i class="bi bi-play-fill"></i> Ver ahora
+              </a>
+              <a href="./detalle-serie.html" class="btn btn-outline-light btn-lg">Más información</a>
+            </div>
+          </div>
         </div>
-
       </div>
-
     </div>
 
-  </section>
+    <div class="carousel-item" data-bs-interval="5000">
+      <div class="hero" style="background-image: url('../asset/TheBatman.jpeg');">
+        <div class="hero-overlay">
+          <div class="container hero-content text-white">
+            <h1 class="display-3 fw-bold mb-3">The Batman</h1>
+            <p class="lead mb-4">Venganza y justicia en las sombras de Gotham City.</p>
+            <div class="d-flex gap-3">
+              <a href="https://www.warnerbros.com/movies/the-batman" target="_blank" class="btn btn-danger btn-lg">
+                <i class="bi bi-play-fill"></i> Ver ahora
+              </a>
+              <a href="./detalle-pelicula.html" class="btn btn-outline-light btn-lg">Más información</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="carousel-item" data-bs-interval="5000">
+      <div class="hero" style="background-image: url('../asset/interstellar.png');">
+        <div class="hero-overlay">
+          <div class="container hero-content text-white">
+            <h1 class="display-3 fw-bold mb-3">Interstellar</h1>
+            <p class="lead mb-4">Un viaje más allá de las galaxias para salvar el futuro de la humanidad.</p>
+            <div class="d-flex gap-3">
+              <a href="https://www.paramountmovies.com/movies/interstellar" target="_blank" class="btn btn-danger btn-lg">
+                <i class="bi bi-play-fill"></i> Ver ahora
+              </a>
+              <a href="./detalle-pelicula.html" class="btn btn-outline-light btn-lg">Más información</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstrenos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselEstrenos" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstrenos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselEstrenos" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
   <!-- ================= PELÍCULAS SUGERIDAS ================= -->
 
   <section class="container py-5">
