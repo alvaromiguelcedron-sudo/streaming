@@ -82,6 +82,7 @@ body{
      z-index: 999;       
     pointer-events: auto;
     position: relative;
+
    
 }
 #heroCarousel {
@@ -104,6 +105,8 @@ body{
   background-color: #e50914;
   border: none;
   transition: none !important;
+  position: relative;
+  z-index: 10;
 }
 
 .btn-danger:hover{
@@ -239,6 +242,8 @@ footer a:hover{
 
   .hero-content{
     margin: auto;
+    position: relative;
+    z-index: 5;
   }
 
   .hero h1{
