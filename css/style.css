@@ -275,3 +275,217 @@ footer a:hover{
   }
 
 }
+
+
+/* Estilos modal cards */
+
+/* .pelicula-modal-1{
+    position: relative;
+    height: 550px;
+    border: none;
+    overflow: hidden;
+
+    background-image: url("../asset/Interstellar-card.webp");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 15px;
+} */
+
+/* capa oscura */
+/* .overlay{
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.9) 20%,
+        rgba(0,0,0,0.4) 60%,
+        rgba(0,0,0,0.2)
+    );
+} */
+
+/* contenido */
+/* .contenido-modal{
+    position: absolute;
+    z-index: 2;
+
+    bottom: 60px;
+    left: 30px;
+
+    max-width: 450px;
+
+    color: white;
+}
+
+.titulo-pelicula{
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tags{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tags span{
+    background-color: rgba(255,255,255,0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.descripcion{
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+} */
+
+/* botón cerrar */
+/* .cerrar-modal{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+} */
+
+.pelicula-modal {
+  position: relative;
+  height: 550px;
+  border: none;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 15px;
+}
+
+/* imágenes de cada modal */
+.pelicula-interstellar {
+  background-image: url("../asset/Interstellar-card.webp");
+}
+
+.pelicula-batman {
+  background-image: url("../asset/Batman-modal.jpg");
+}
+
+.pelicula-avengers {
+  background-image: url("../asset/avengers-modal.avif");
+}
+
+.pelicula-joker {
+  background-image: url("../asset/joker-modal.avif");
+}
+
+/* capa oscura */
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.9) 20%,
+    rgba(0,0,0,0.4) 60%,
+    rgba(0,0,0,0.2)
+  );
+}
+
+/* contenido */
+.contenido-modal {
+  position: absolute;
+  z-index: 2;
+
+  bottom: 60px;
+  left: 30px;
+
+  max-width: 720px;
+
+  color: white;
+}
+
+.titulo-pelicula {
+  font-size: clamp(4rem, 7vw, 6rem);
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tags span {
+  background-color: rgba(255,255,255,0.2);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.descripcion {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  max-width: 580px;
+}
+
+/* botón cerrar */
+.cerrar-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+/* responsive modal */
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 10px;
+  }
+
+  .pelicula-modal {
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+  }
+
+  .overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.9)
+    );
+  }
+
+  .contenido-modal {
+    position: relative;
+    bottom: auto;
+    left: auto;
+
+    max-width: 100%;
+    padding: 90px 20px 30px;
+  }
+
+  .titulo-pelicula {
+    font-size: clamp(2.2rem, 13vw, 3.4rem);
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .tags {
+    gap: 6px;
+  }
+
+  .tags span {
+    font-size: 0.8rem;
+  }
+
+  .descripcion {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+}
