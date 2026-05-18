@@ -1,0 +1,23 @@
+.netflix-card {
+  transition: 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.netflix-card:hover {
+  transform: scale(1.05);
+}
+
+.netflix-card img {
+  height: 450px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 576px) {
+
+  .netflix-card img {
+    height: 300px;
+  }
+
+}

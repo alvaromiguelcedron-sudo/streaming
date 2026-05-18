@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>StreamFlix</title>
+  <link rel="icon" type="image.png" href="./asset/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/navbar-brandon.css">
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  >
+
+  <!-- CSS -->
+ 
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold text-danger fs-3" href="#">
+        STREAMFLIX
+      </a>
+
+      <!-- Botón responsive -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú -->
+      <div class="collapse navbar-collapse" id="menu">
+
+        <!-- Links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              Inicio
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#comedia">
+              Comedia
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#ciencia-ficcion">
+              Ciencia ficción
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contacto.html">
+              Contacto
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- Buscador -->
+        <form class="d-flex me-3 mb-3 mb-lg-0">
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Buscar películas..."
+          >
+        </form>
+
+        <!-- Botones -->
+        <div class="d-flex gap-2">
+
+          <a
+            href="./pages/login.html"
+            class="btn btn-outline-light"
+          >
+            Ingresar
+          </a>
+
+          <a
+            href="./pages/suscripcion.html"
+            class="btn btn-danger"
+          >
+            Suscribirse
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+ 
+  <section class="container py-5">
+
+    <h2 class="text-white mb-4">
+      Categorías populares
+    </h2>
+
+    <div class="row g-4">
+
+      <!-- Categoría 1 -->
+      <div id="comedia" class="col-md-6">
+
+        <div class="category-card comedy">
+
+          <div class="category-overlay">
+
+            <h3>Comedia</h3>
+
+            <a
+              href="peliculas.html"
+              class="btn btn-danger"
+            >
+              Explorar
+            </a>
+
+          </div>
+
+        </div>
+        
+      </div>
+
+      <!-- Categoría 2 -->
+      <div id="ciencia-ficcion" class="col-md-6">
+
+        <div class="category-card sci-fi">
+
+          <div class="category-overlay">
+
+            <h3>Ciencia ficción</h3>
+
+            <a
+              href="ciencia-ficcion.html"
+              class="btn btn-danger"
+            >
+              Explorar
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+</main>
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="bg-black text-white pt-5 pb-3">
+
+    <div class="container">
+
+      <div class="row text-center text-md-start">
+
+        <!-- Columna 1 -->
+        <div class="col-md-4 mb-4">
+
+          <h3 class="text-danger">
+            STREAMFLIX
+          </h3>
+
+          <p>
+            Tu plataforma favorita de películas y series.
+          </p>
+
+        </div>
+
+        <!-- Columna 2 -->
+        <div class="col-md-4 mb-4">
+
+          <h5>
+            Redes sociales
+          </h5>
+
+          <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Columna 3 -->
+        <div class="col-md-4 mb-4">
+
+          <h5>
+            Links útiles
+          </h5>
+
+          <ul class="list-unstyled">
+
+            <li>
+              <a
+                href="./pages/nosotros.html"
+                class="text-white text-decoration-none"
+              >
+                Acerca de nosotros
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="./pages/contacto.html"
+                class="text-white text-decoration-none"
+              >
+                Contacto
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <hr>
+
+      <p class="text-center">
+        © 2026 StreamFlix - Todos los derechos reservados
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS -->
+   <div class="modal fade" id="modalInfo" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-white border-danger">
+      <div class="modal-header border-0">
+        <h3 class="modal-title fw-bold text-danger" id="infoTitulo"></h3>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p id="infoTexto" class="fs-5"></p>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <div class="modal fade" id="modalPelicula" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white border-danger">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold text-danger">🍿 Sugerencia de StreamFlix</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center py-4">
+        <h4 class="mb-3">¡Hoy te toca ver:</h4>
+        <h2 id="peliculaSeleccionada" class="display-6 fw-bold text-uppercase"></h2>
+        <h4 class="mt-3">!</h4>
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <button type="button" class="btn btn-danger px-4" data-bs-dismiss="modal">¡Buenísimo!</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="./pages/app.js"></script>
+
+</body>
+</html>
